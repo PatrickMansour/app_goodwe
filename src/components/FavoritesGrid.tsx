@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useNavigate } from "react-router-dom";
 import { 
   AirVent, 
   Tv, 
@@ -31,6 +32,8 @@ const devices: Device[] = [
 ];
 
 const FavoritesGrid = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="bg-gradient-orange rounded-2xl p-6 shadow-orange">
       <div className="flex items-center justify-between mb-6">
@@ -53,6 +56,7 @@ const FavoritesGrid = () => {
                   ? "bg-white/95 shadow-lg" 
                   : "bg-white/60"
               }`}
+              onClick={() => navigate('/controls')}
             >
               <CardContent className="p-4">
                 <div className="flex flex-col items-center text-center space-y-2">
