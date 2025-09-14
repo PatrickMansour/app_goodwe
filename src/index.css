@@ -8,17 +8,19 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 248 250 252;
+    --foreground: 215 25% 27%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 215 25% 27%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 215 25% 27%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Smart home color system */
+    --primary: 220 91% 58%;
+    --primary-foreground: 220 9% 95%;
+    --primary-glow: 220 91% 75%;
 
     --secondary: 210 40% 96.1%;
     --secondary-foreground: 222.2 47.4% 11.2%;
@@ -32,11 +34,33 @@ All colors MUST be HSL.
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    /* Smart home specific colors */
+    --smart-blue: 220 91% 58%;
+    --smart-blue-light: 220 91% 75%;
+    --smart-yellow: 45 93% 60%;
+    --smart-yellow-light: 45 93% 75%;
+    --smart-orange: 25 95% 65%;
+    --smart-orange-light: 25 95% 80%;
+    --smart-green: 142 71% 45%;
+    --smart-purple: 262 83% 65%;
+
+    /* Gradients */
+    --gradient-blue: linear-gradient(135deg, hsl(var(--smart-blue)), hsl(var(--smart-blue-light)));
+    --gradient-yellow: linear-gradient(135deg, hsl(var(--smart-yellow)), hsl(var(--smart-yellow-light)));
+    --gradient-orange: linear-gradient(135deg, hsl(var(--smart-orange)), hsl(var(--smart-orange-light)));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(var(--primary) / 0.15);
+    --shadow-blue: 0 8px 32px -8px hsl(var(--smart-blue) / 0.3);
+    --shadow-yellow: 0 8px 32px -8px hsl(var(--smart-yellow) / 0.3);
+    --shadow-orange: 0 8px 32px -8px hsl(var(--smart-orange) / 0.3);
+
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --ring: 220 91% 58%;
 
-    --radius: 0.5rem;
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 

@@ -22,6 +22,7 @@ export default {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
+          glow: "hsl(var(--primary-glow))",
         },
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
@@ -47,6 +48,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        smart: {
+          blue: "hsl(var(--smart-blue))",
+          "blue-light": "hsl(var(--smart-blue-light))",
+          yellow: "hsl(var(--smart-yellow))",
+          "yellow-light": "hsl(var(--smart-yellow-light))",
+          orange: "hsl(var(--smart-orange))",
+          "orange-light": "hsl(var(--smart-orange-light))",
+          green: "hsl(var(--smart-green))",
+          purple: "hsl(var(--smart-purple))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -57,6 +68,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+      },
+      backgroundImage: {
+        "gradient-blue": "var(--gradient-blue)",
+        "gradient-yellow": "var(--gradient-yellow)",
+        "gradient-orange": "var(--gradient-orange)",
+        "gradient-primary": "var(--gradient-primary)",
+      },
+      boxShadow: {
+        soft: "var(--shadow-soft)",
+        blue: "var(--shadow-blue)",
+        yellow: "var(--shadow-yellow)",
+        orange: "var(--shadow-orange)",
       },
       borderRadius: {
         lg: "var(--radius)",
