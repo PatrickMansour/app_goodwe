@@ -27,8 +27,8 @@ const Controls = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto px-4 py-6 space-y-6">
+    <div className="min-h-screen bg-white">
+      <div className="container mx-auto px-4 py-6 space-y-6 bg-white rounded-xl">
         {/* Header */}
         <div className="flex items-center space-x-4">
           <Button 
@@ -45,7 +45,7 @@ const Controls = () => {
         {/* Device Controls Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {/* Ar Condicionado */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
@@ -80,11 +80,11 @@ const Controls = () => {
           </Card>
 
           {/* TV */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Tv className="h-5 w-5 text-smart-purple" />
+                          <Tv className="h-5 w-5 text-black" />
                   <span>Smart TV</span>
                 </div>
                 <Switch 
@@ -115,11 +115,11 @@ const Controls = () => {
           </Card>
 
           {/* Luzes */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Lightbulb className="h-5 w-5 text-smart-yellow" />
+                          <Lightbulb className="h-5 w-5 text-red-600" />
                   <span>Luzes Inteligentes</span>
                 </div>
                 <Switch 
@@ -150,11 +150,11 @@ const Controls = () => {
           </Card>
 
           {/* Carregador */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Car className="h-5 w-5 text-smart-green" />
+                          <Car className="h-5 w-5 text-black" />
                   <span>Carregador EV</span>
                 </div>
                 <Switch 
@@ -171,11 +171,11 @@ const Controls = () => {
           </Card>
 
           {/* Alexa */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Volume2 className="h-5 w-5 text-smart-blue" />
+                          <Volume2 className="h-5 w-5 text-red-600" />
                   <span>Alexa</span>
                 </div>
                 <Switch 
@@ -206,11 +206,11 @@ const Controls = () => {
           </Card>
 
           {/* Sistema Solar */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Zap className="h-5 w-5 text-smart-yellow" />
+                          <Zap className="h-5 w-5 text-red-600" />
                   <span>Sistema Solar</span>
                 </div>
                 <Switch 
@@ -227,11 +227,11 @@ const Controls = () => {
           </Card>
 
           {/* Roteador */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Wifi className="h-5 w-5 text-smart-green" />
+                          <Wifi className="h-5 w-5 text-black" />
                   <span>Wi-Fi</span>
                 </div>
                 <Switch 
@@ -248,11 +248,11 @@ const Controls = () => {
           </Card>
 
           {/* Termostato */}
-          <Card>
+                  <Card className="bg-white border border-black">
             <CardHeader className="pb-3">
               <CardTitle className="flex items-center justify-between">
                 <div className="flex items-center space-x-2">
-                  <Thermometer className="h-5 w-5 text-smart-orange" />
+                          <Thermometer className="h-5 w-5 text-red-600" />
                   <span>Termostato</span>
                 </div>
                 <Switch 

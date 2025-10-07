@@ -35,12 +35,12 @@ const FavoritesGrid = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="bg-gradient-orange rounded-2xl p-6 shadow-orange">
+  <div className="bg-black rounded-2xl p-6">
       <div className="flex items-center justify-between mb-6">
         <h2 className="text-xl font-bold text-white flex items-center">
           ⭐ Favoritos
         </h2>
-        <Badge variant="secondary" className="bg-white/20 text-white">
+  <Badge variant="secondary" className="bg-red-600 text-white">
           {devices.filter(d => d.status === "on").length} ativos
         </Badge>
       </div>
@@ -51,37 +51,25 @@ const FavoritesGrid = () => {
           return (
             <Card 
               key={device.id} 
-              className={`cursor-pointer transition-all duration-300 hover:scale-105 border-0 ${
-                device.status === "on" 
-                  ? "bg-white/95 shadow-lg" 
-                  : "bg-white/60"
-              }`}
+              className="cursor-pointer transition-all duration-300 hover:scale-105 border-0 bg-white shadow-lg"
               onClick={() => navigate('/controls')}
             >
               <CardContent className="p-4">
                 <div className="flex flex-col items-center text-center space-y-2">
-                  <div className={`p-3 rounded-full transition-colors ${
-                    device.status === "on" 
-                      ? "bg-smart-orange text-white" 
-                      : "bg-muted text-muted-foreground"
-                  }`}>
+                  <div className="p-3 rounded-full transition-colors bg-red-600 text-white">
                     <IconComponent className="h-6 w-6" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-sm text-foreground leading-tight">
+                    <h3 className="font-semibold text-sm text-black leading-tight">
                       {device.name}
                     </h3>
                     {device.info && (
-                      <p className={`text-xs mt-1 ${
-                        device.status === "on" ? "text-smart-orange" : "text-muted-foreground"
-                      }`}>
+                      <p className="text-xs mt-1 text-red-600">
                         {device.info}
                       </p>
                     )}
                   </div>
-                  <div className={`h-2 w-2 rounded-full ${
-                    device.status === "on" ? "bg-smart-green" : "bg-muted-foreground/30"
-                  }`} />
+                  <div className="h-2 w-2 rounded-full bg-red-600" />
                 </div>
               </CardContent>
             </Card>

@@ -5,7 +5,7 @@ import BottomNavigation from "@/components/BottomNavigation";
 
 const Index = () => {
   return (
-    <div className="min-h-screen bg-background pb-24">
+    <div className="min-h-screen bg-white pb-24">
       <div className="container mx-auto px-4 py-6 space-y-6">
         {/* User Profile Section */}
         <UserProfile />

@@ -3,9 +3,11 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Switch } from "@/components/ui/switch";
 import { ArrowLeft, User, Bell, Shield, Wifi, Moon, Globe, HelpCircle, LogOut } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import { useTheme } from "../theme";
 
 const Settings = () => {
   const navigate = useNavigate();
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <div className="min-h-screen bg-background">
@@ -119,7 +121,7 @@ const Settings = () => {
                 <p className="font-medium">Modo Escuro</p>
                 <p className="text-sm text-muted-foreground">Tema escuro automático</p>
               </div>
-              <Switch />
+              <Switch checked={theme === "dark"} onCheckedChange={toggleTheme} />
             </div>
             <div className="flex items-center justify-between">
               <div>
